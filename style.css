@@ -98,7 +98,7 @@ body {
   color: #f7e8bd;
   background:
     linear-gradient(135deg, rgba(91,23,21,.92), rgba(33,16,11,.82)),
-    url("her.png");
+    url("hero.png");
   background-size: cover;
   background-position: center;
   border: 2px solid var(--gold);
