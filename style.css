@@ -160,19 +160,19 @@ h1 {
 
 .card {
   margin-top: 28px;
-  padding: 32px;
+  padding: 28px 34px;
   border-radius: 22px;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.45), rgba(255,255,255,.12)),
+    linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,.08)),
     var(--card);
   border: 2px solid rgba(184,131,47,.7);
   box-shadow: 0 18px 42px rgba(0,0,0,.28);
 }
 
 .card h2 {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   font-family: Georgia, serif;
-  font-size: 2.25rem;
+  font-size: 2.1rem;
   color: var(--red);
   border-bottom: 2px solid rgba(91,23,21,.22);
   padding-bottom: 12px;
@@ -181,6 +181,10 @@ h1 {
 .card h3 {
   color: var(--red2);
   margin: 24px 0 8px;
+}
+
+.card ul {
+  margin-top: 0;
 }
 
 p,
@@ -193,8 +197,7 @@ li {
 }
 
 .tiers,
-.grid,
-.banned {
+.grid {
   display: grid;
   gap: 14px;
 }
@@ -206,7 +209,6 @@ li {
 
 .tiers div,
 .grid article,
-.banned span,
 .note,
 .danger {
   background: rgba(91,23,21,.08);
@@ -252,13 +254,22 @@ li {
   margin-top: 18px;
 }
 
-.banned {
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+.banned-list {
+  columns: 3;
+  column-gap: 46px;
+  margin: 0;
+  padding-left: 22px;
 }
 
-.banned span {
-  font-weight: 800;
+.banned-list li {
+  break-inside: avoid;
+  font-weight: 700;
   color: var(--red);
+  margin-bottom: 10px;
+}
+
+#enforcement.card {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 900px) {
@@ -285,5 +296,15 @@ li {
 
   .tiers {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banned-list {
+    columns: 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .banned-list {
+    columns: 1;
   }
 }
