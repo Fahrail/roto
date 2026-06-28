@@ -6,330 +6,262 @@
 
   <title>ROTO - Rome</title>
   <link rel="icon" type="image/png" href="64.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="page-bg"></div>
 
-  <header class="site-header">
-    <a href="#home" class="brand">
-      <img src="logo.png" alt="ROTO Rome Logo">
-      <span>ROTO - Rome</span>
-    </a>
+  <aside class="sidebar">
+    <img src="logo.png" class="side-logo" alt="ROTO Rome Logo">
+    <h2>ROTO - Rome</h2>
+    <p>Rules & Guides</p>
 
-    <nav class="top-nav">
-      <a href="#rules">Rules</a>
-      <a href="#nation-guide">Nation Guide</a>
-      <a href="#warfare-guide">Warfare Guide</a>
-      <a href="#banned-items">Banned Items</a>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#rules">Server Rules</a>
+      <a href="#conduct">Conduct</a>
+      <a href="#combat">PvP & Combat</a>
+      <a href="#factions">Factions</a>
+      <a href="#nation">Nation Guide</a>
+      <a href="#economy">Economy</a>
+      <a href="#warfare">Warfare Guide</a>
+      <a href="#relics">Relics & Units</a>
+      <a href="#banned">Banned Items</a>
       <a href="#enforcement">Enforcement</a>
     </nav>
-  </header>
+  </aside>
 
-  <main id="home">
+  <main class="page">
 
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Minecraft Geopolitical Roleplay Server</p>
+    <section class="hero" id="overview">
+      <div class="hero-text-box">
+        <span class="eyebrow">Official Server Hub</span>
         <h1>ROTO - Rome</h1>
-        <p class="hero-text">
-          The central rulebook and guide hub for ROTO - Rome. Use this page to find server rules,
-          nation requirements, war systems, banned items, and enforcement information.
+        <p>
+          The official rulebook and guide hub for the ROTO - Rome Minecraft server.
+          This page separates actual server rules from nation mechanics and warfare systems
+          so players can find what they need quickly.
         </p>
-
-        <div class="hero-buttons">
-          <a href="#rules">Read Rules</a>
-          <a href="#nation-guide">Nation Guide</a>
-          <a href="#warfare-guide">Warfare Guide</a>
-        </div>
-      </div>
-
-      <div class="hero-emblem">
-        <img src="logo.png" alt="ROTO Rome Logo">
+        <p class="credit">Written by Puredoom & ItzYaBoiRampage</p>
       </div>
     </section>
 
-    <!-- Future image idea:
-    <section class="wide-image image-rome-city">
-      <div>
-        <h2>Rome Awaits</h2>
-        <p>Placeholder for a cinematic Roman city / Minecraft empire banner.</p>
-      </div>
-    </section>
-    -->
+    <img src="hero.png" class="wide-banner" alt="ROTO Rome Hero Banner">
 
-    <section class="section-intro">
-      <p class="eyebrow">Quick Navigation</p>
-      <h2>Choose What You Need</h2>
+    <section class="card" id="rules">
+      <h2>Server Rules</h2>
       <p>
-        The old ruleset mixed actual rules with guides and mechanics. This version separates them
-        so players can quickly find what matters.
+        These are the actual rules players are expected to follow. Breaking these rules may result in
+        warnings, item removal, temporary bans, permanent bans, or other staff action depending on severity.
       </p>
     </section>
 
-    <section class="hub-grid">
-      <a href="#rules" class="hub-card">
-        <span>01</span>
-        <h3>Server Rules</h3>
-        <p>Behavior, PvP limits, claims, cheating, paintings, and staff expectations.</p>
-      </a>
-
-      <a href="#nation-guide" class="hub-card">
-        <span>02</span>
-        <h3>Nation Guide</h3>
-        <p>Capital requirements, buildings, economy structures, rewards, and settlement progress.</p>
-      </a>
-
-      <a href="#warfare-guide" class="hub-card">
-        <span>03</span>
-        <h3>Warfare Guide</h3>
-        <p>War declarations, travel costs, units, relics, naval routes, and inactive tile conquest.</p>
-      </a>
+    <section class="card" id="conduct">
+      <h2>Community Conduct</h2>
+      <ul>
+        <li>Be respectful. Harassment, toxicity, discrimination, and targeted abuse are not allowed.</li>
+        <li>No NSFW builds, messages, paintings, skins, or content.</li>
+        <li>No unrelated advertising, spam, staff impersonation, or player impersonation.</li>
+        <li>No real-life threats, doxxing, DDoS threats, extremist content, or promotion of real-world atrocities.</li>
+        <li>No false reports, fake evidence, or intentionally misleading staff during investigations.</li>
+        <li>Loopholes are not a valid defense. Staff may punish behavior that clearly breaks the spirit of the rules.</li>
+      </ul>
     </section>
 
-    <section class="content-section" id="rules">
-      <div class="section-heading">
-        <p class="eyebrow">Section One</p>
-        <h2>Server Rules</h2>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Community Conduct</h3>
-        <ul>
-          <li>Be respectful. Harassment, toxicity, discrimination, and targeted abuse are not allowed.</li>
-          <li>No NSFW builds, messages, paintings, skins, or content.</li>
-          <li>No unrelated advertising, spam, staff impersonation, or player impersonation.</li>
-          <li>No real-life threats, doxxing, DDoS threats, extremist content, or promotion of real-world atrocities.</li>
-          <li>No false reports, fake evidence, or intentionally misleading staff during investigations.</li>
-          <li>Loopholes are not a valid defense. Staff may punish behavior that clearly breaks the spirit of the rules.</li>
-        </ul>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Fair Play & Anti-Cheating</h3>
-        <ul>
-          <li>No hacked clients, autoclickers, macros, unauthorized alts, or stolen accounts.</li>
-          <li>One account per player unless staff approves otherwise.</li>
-          <li>No teleport traps, combat logging, or logging out to avoid combat, sieges, raids, captures, or staff action.</li>
-          <li>No griefing outside active sieges or staff-approved war events.</li>
-          <li>Warps and travel points must remain usable and may not be intentionally blocked or trapped.</li>
-          <li>Allowed mods include Optifine, JEI, and minimaps unless staff says otherwise.</li>
-          <li>Report exploits immediately. Knowingly abusing bugs or exploits is prohibited even if reported later.</li>
-        </ul>
-      </div>
-
-      <div class="rule-panel">
-        <h3>PvP & Combat Rules</h3>
-        <ul>
-          <li>PvP is always enabled.</li>
-          <li>No handcuffs or trapping items may be used in PvP or war.</li>
-          <li>If a player hides in their base and refuses to fight, attackers must leave using /stuck after a maximum of 15 minutes.</li>
-          <li>Repeatedly hunting, camping, or targeting a player outside active war may be treated as harassment.</li>
-          <li>No AFK kills.</li>
-          <li>No teleporting during combat, raids, sieges, hunts, or wars.</li>
-          <li>No dual-wielding combat gear for extra stats.</li>
-          <li>Units cannot be killed outside of wars unless they attack first. Breaking this may result in an instant ban.</li>
-          <li>Greek Fire may only be used defensively to protect your own land.</li>
-        </ul>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Factions & Claiming Rules</h3>
-        <ul>
-          <li>No sabotage, griefing, or stealing from faction members.</li>
-          <li>Espionage, spying, and information-sharing are allowed.</li>
-          <li>Faction leaders must return the items of kicked players.</li>
-          <li>Claims must stay within the faction tilemap.</li>
-          <li>Wanderers may claim small areas anywhere.</li>
-          <li>No snake claims, hollow claims, or distant ocean-only claims.</li>
-          <li>Sea claims may only extend up to 4 chunks from the coastline.</li>
-        </ul>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Immersive Paintings</h3>
-        <ul>
-          <li>No profanity, offensive text, slurs, hate speech, or extremist content.</li>
-          <li>No nudity, sexual content, or anything sexual in nature.</li>
-          <li>No graphic, gory, violent, or disturbing content.</li>
-          <li>No references to real-world dictators, terrorists, or figures associated with atrocities.</li>
-          <li>Historical or religious Roman/medieval artwork is allowed only when used respectfully and in context.</li>
-        </ul>
-      </div>
+    <section class="card">
+      <h2>Fair Play & Anti-Cheating</h2>
+      <ul>
+        <li>No hacked clients, autoclickers, macros, unauthorized alts, or stolen accounts.</li>
+        <li>One account per player unless approved by staff.</li>
+        <li>No teleport traps, combat logging, or logging out to avoid combat, sieges, raids, captures, or staff action.</li>
+        <li>No griefing outside active sieges or staff-approved war events.</li>
+        <li>Warps and travel points must remain usable and may not be intentionally blocked or trapped.</li>
+        <li>Allowed mods include Optifine, JEI, and minimaps unless staff says otherwise.</li>
+        <li>Report exploits immediately. Knowingly abusing bugs or exploits is prohibited, even if reported later.</li>
+      </ul>
     </section>
 
-    <!-- Future image idea:
-    <section class="wide-image image-legion">
-      <div>
-        <h2>Build Your Nation</h2>
-        <p>Placeholder for Roman legion / faction banner.</p>
-      </div>
+    <section class="card" id="combat">
+      <h2>PvP & Combat Rules</h2>
+      <ul>
+        <li>PvP is always enabled.</li>
+        <li>No handcuffs or trapping items may be used in PvP or war.</li>
+        <li>If a player hides in their base and refuses to fight, attackers must leave using /stuck after a maximum of 15 minutes.</li>
+        <li>Repeatedly hunting, camping, or targeting a player outside active war may be treated as harassment.</li>
+        <li>No AFK kills.</li>
+        <li>No teleporting during combat, raids, sieges, hunts, or wars.</li>
+        <li>No dual-wielding combat gear for extra stats.</li>
+        <li>Units cannot be killed outside of wars unless they attack first. Breaking this may result in an instant ban.</li>
+        <li>Greek Fire may only be used defensively to protect your own land.</li>
+      </ul>
+
+      <h3>Gear Restrictions</h3>
+      <ul>
+        <li>No Netherite weapons or armor.</li>
+        <li>No diamond weapons.</li>
+        <li>No vanilla armor, shields, or axes.</li>
+        <li>No enchantments on combat gear. Tool enchants and utility enchants are allowed.</li>
+        <li>No vanilla potions.</li>
+        <li>Potions are capped at Level 1.</li>
+        <li>No Elytra or Ender Pearls for PvP.</li>
+      </ul>
     </section>
-    -->
 
-    <section class="content-section" id="nation-guide">
-      <div class="section-heading">
-        <p class="eyebrow">Section Two</p>
-        <h2>Nation Guide</h2>
+    <section class="card" id="factions">
+      <h2>Factions & Claiming Rules</h2>
+      <ul>
+        <li>No sabotage, griefing, or stealing from faction members.</li>
+        <li>Espionage, spying, and information-sharing are allowed.</li>
+        <li>Faction leaders must return the items of kicked players.</li>
+        <li>Claims must stay within the faction tilemap.</li>
+        <li>Wanderers may claim small areas anywhere.</li>
+        <li>No snake claims, hollow claims, or distant ocean-only claims.</li>
+        <li>Sea claims may only extend up to 4 chunks from the coastline.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Immersive Paintings</h2>
+      <ul>
+        <li>No profanity, offensive text, slurs, hate speech, or extremist content.</li>
+        <li>No nudity, sexual content, or anything sexual in nature.</li>
+        <li>No graphic, gory, violent, or disturbing content.</li>
+        <li>No references to real-world dictators, terrorists, or figures associated with atrocities.</li>
+        <li>Historical or religious Roman/medieval artwork is allowed only when used respectfully and in context.</li>
+      </ul>
+    </section>
+
+    <img src="nation.png" class="wide-banner" alt="Nation Guide Banner">
+
+    <section class="card" id="nation">
+      <h2>Nation Guide</h2>
+      <p>
+        This section explains settlement requirements, building tiers, resource structures, and economy rewards.
+        These are server mechanics, not conduct rules, but they are still required for capitals and settlements to qualify.
+      </p>
+
+      <h3>Build Quality & Multipliers</h3>
+      <p>
+        Builds are judged by size, detail, realism, and effort. Structures must reasonably resemble their intended purpose
+        and fit the server’s historical theme. Staff have final say on structure eligibility.
+      </p>
+
+      <div class="tiers">
+        <div><b>Tier 1</b><span>1.0x</span></div>
+        <div><b>Tier 2</b><span>2.0x</span></div>
+        <div><b>Tier 3</b><span>3.0x</span></div>
+        <div><b>Tier 4</b><span>4.0x</span></div>
       </div>
 
-      <div class="rule-panel">
-        <h3>Build Quality & Multipliers</h3>
-        <p>
-          Builds are judged by size, detail, realism, and effort. Structures must reasonably resemble
-          their intended purpose and fit the server’s historical theme. Staff have final say on eligibility.
-        </p>
+      <h3>Capital & Housing Requirements</h3>
+      <ul>
+        <li>Capitals and settlements must have at least 8 houses inside the walls.</li>
+        <li>Each house must be at least 8×8×6.</li>
+        <li>Each house must include a bed, storage, décor, and basic utilities.</li>
+        <li>Houses must look like realistic dwellings.</li>
+        <li>Housing must be completed before specialized structures unlock.</li>
+      </ul>
 
-        <div class="tier-grid">
-          <div><strong>Tier 1</strong><span>1.0x</span></div>
-          <div><strong>Tier 2</strong><span>2.0x</span></div>
-          <div><strong>Tier 3</strong><span>3.0x</span></div>
-          <div><strong>Tier 4</strong><span>4.0x</span></div>
-        </div>
+      <div class="note">Reward: +1 Villager Egg per house per day, and +1 Food per hour.</div>
+    </section>
+
+    <section class="card">
+      <h2>Military Structures</h2>
+
+      <div class="grid">
+        <article><h3>Barracks</h3><p>Sleeping quarters, training grounds, firing range, stables, and armoury.</p><span>+2 permanent unit capacity, +1 Iron Ingot/hour</span></article>
+        <article><h3>Walls</h3><p>Must fully enclose the settlement with 1 main gate, 1 side gate, and 4 towers.</p><span>+3 Stone Bricks/hour</span></article>
+        <article><h3>Gate</h3><p>Minimum 3 blocks wide with mounted-unit clearance.</p><span>+1 Iron Ingot/hour</span></article>
+        <article><h3>Moat</h3><p>Must allow safe ally crossing. Water and traps are allowed. TNT, fire, and lava are not.</p><span>+2 Clay/hour</span></article>
       </div>
 
-      <div class="rule-panel">
-        <h3>Capital & Housing Requirements</h3>
-        <ul>
-          <li>Capitals and settlements must have at least 8 houses inside the walls.</li>
-          <li>Each house must be at least 8×8×6.</li>
-          <li>Each house must include a bed, storage, décor, and basic utilities.</li>
-          <li>Houses must look like realistic dwellings.</li>
-          <li>Housing must be completed before specialized structures unlock.</li>
-        </ul>
+      <div class="danger">No obsidian, waterlogging, or regenerating walls.</div>
+    </section>
 
-        <div class="note">Reward: +1 Villager Egg per house per day, and +1 Food per hour.</div>
+    <section class="card" id="economy">
+      <h2>Economy & Resource Structures</h2>
+
+      <div class="grid">
+        <article><h3>Shed / Shack</h3><p>Minimum 10×8×5 with chests, furnaces, crafting, and décor.</p><span>+2 Planks/hour</span></article>
+        <article><h3>Farm</h3><p>Farm shed plus at least 1 chunk field.</p><span>+4 Wheat/hour, +1 Hay Bale/day</span></article>
+        <article><h3>Lumber Mill</h3><p>Shed plus 12 fenced trees.</p><span>+3 Logs/hour, +2 Charcoal/hour</span></article>
+        <article><h3>Mines</h3><p>Quarry, entrance, and storage.</p><span>+1 Coal/hour, +1 Iron Ore/hour</span></article>
+        <article><h3>Blacksmith</h3><p>Forge, house, and storage.</p><span>+2 Iron Ore/hour</span></article>
+        <article><h3>Religious Building</h3><p>Must clearly resemble a respectful religious building.</p><span>+1 Modifier Book/day</span></article>
+        <article><h3>Manufactury</h3><p>Byzantium upgrade. Requires overseer’s office and storage.</p><span>+1 Weapon/day OR +5 Greek Fire/day</span></article>
       </div>
 
-      <div class="rule-panel">
-        <h3>Military Structures</h3>
-        <div class="item-grid">
-          <article>
-            <h4>Barracks</h4>
-            <p>Sleeping quarters, training grounds, firing range, stables, and armoury.</p>
-            <span>+2 permanent unit capacity, +1 Iron Ingot/hour</span>
-          </article>
+      <h3>Animal Farms</h3>
+      <p>Animal farms require a minimum 12×12 pen, 15 animals, and a barn.</p>
 
-          <article>
-            <h4>Walls</h4>
-            <p>Must fully enclose the settlement with 1 main gate, 1 side gate, and 4 towers.</p>
-            <span>+3 Stone Bricks/hour</span>
-          </article>
-
-          <article>
-            <h4>Gate</h4>
-            <p>Minimum 3 blocks wide with mounted-unit clearance.</p>
-            <span>+1 Iron Ingot/hour</span>
-          </article>
-
-          <article>
-            <h4>Moat</h4>
-            <p>Must allow safe ally crossing. Water and traps are allowed. TNT, fire, and lava are not.</p>
-            <span>+2 Clay/hour</span>
-          </article>
-        </div>
-
-        <div class="danger">No obsidian, waterlogging, or regenerating walls.</div>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Economy & Resource Structures</h3>
-        <div class="item-grid">
-          <article><h4>Shed / Shack</h4><p>Minimum 10×8×5 with chests, furnaces, crafting, and décor.</p><span>+2 Planks/hour</span></article>
-          <article><h4>Farm</h4><p>Farm shed plus at least 1 chunk field.</p><span>+4 Wheat/hour, +1 Hay Bale/day</span></article>
-          <article><h4>Lumber Mill</h4><p>Shed plus 12 fenced trees.</p><span>+3 Logs/hour, +2 Charcoal/hour</span></article>
-          <article><h4>Mines</h4><p>Quarry, entrance, and storage.</p><span>+1 Coal/hour, +1 Iron Ore/hour</span></article>
-          <article><h4>Blacksmith</h4><p>Forge, house, and storage.</p><span>+2 Iron Ore/hour</span></article>
-          <article><h4>Religious Building</h4><p>Must clearly resemble a respectful religious building.</p><span>+1 Modifier Book/day</span></article>
-          <article><h4>Manufactury</h4><p>Byzantium upgrade. Requires overseer’s office and storage.</p><span>+1 Weapon/day OR +5 Greek Fire/day</span></article>
-        </div>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Animal Farms</h3>
-        <p>Animal farms require a minimum 12×12 pen, 15 animals, and a barn.</p>
-
-        <div class="item-grid small">
-          <article><h4>Swine</h4><span>+3 Porkchop/hour</span></article>
-          <article><h4>Cattle</h4><span>+3 Beef/hour, +1 Leather/hour</span></article>
-          <article><h4>Sheep</h4><span>+3 Wool/hour</span></article>
-          <article><h4>Chicken Coop</h4><span>+2 Eggs/hour, +2 Feathers/hour</span></article>
-          <article><h4>Elephant Pen</h4><p>Muslim Exclusive</p><span>+1 Elephant Egg/day</span></article>
-          <article><h4>Horse Pen</h4><p>Christian Exclusive</p><span>+1 Horse Egg/day</span></article>
-        </div>
+      <div class="grid small">
+        <article><h3>Swine</h3><span>+3 Porkchop/hour</span></article>
+        <article><h3>Cattle</h3><span>+3 Beef/hour, +1 Leather/hour</span></article>
+        <article><h3>Sheep</h3><span>+3 Wool/hour</span></article>
+        <article><h3>Chicken Coop</h3><span>+2 Eggs/hour, +2 Feathers/hour</span></article>
+        <article><h3>Elephant Pen</h3><p>Muslim Exclusive</p><span>+1 Elephant Egg/day</span></article>
+        <article><h3>Horse Pen</h3><p>Christian Exclusive</p><span>+1 Horse Egg/day</span></article>
       </div>
     </section>
 
-    <section class="content-section" id="warfare-guide">
-      <div class="section-heading">
-        <p class="eyebrow">Section Three</p>
-        <h2>Warfare Guide</h2>
-      </div>
+    <img src="warfare.png" class="wide-banner" alt="Warfare Guide Banner">
 
-      <div class="rule-panel">
-        <h3>War Declarations</h3>
-        <ul>
-          <li>You must control at least one eligible city or capital to declare war.</li>
-          <li>War declarations against active nations must be posted in the warfare channel.</li>
-          <li>Diplomatic posts must show marching paths, ally permissions, and total cost.</li>
-          <li>Attacking someone in their territory is a valid casus belli.</li>
-          <li>If you are attacked and go to war over it, travel costs are nullified for one battle.</li>
-        </ul>
-      </div>
+    <section class="card" id="warfare">
+      <h2>Warfare Guide</h2>
 
-      <div class="rule-panel">
-        <h3>War Travel</h3>
-        <ul>
-          <li>Land movement costs 3000 coins per tile.</li>
-          <li>You may only march through your own tiles or allied tiles.</li>
-          <li>Seafaring costs the same as land movement.</li>
-          <li>Seas cannot be blockaded.</li>
-          <li>If forces clash on the same sea path, a naval battle occurs. The winner keeps the route.</li>
-        </ul>
+      <h3>War Declarations</h3>
+      <ul>
+        <li>You must control at least one eligible city or capital to declare war.</li>
+        <li>War declarations against active nations must be posted in the warfare channel.</li>
+        <li>Diplomatic posts must show marching paths, ally permissions, and total cost.</li>
+        <li>Attacking someone in their territory is a valid casus belli.</li>
+        <li>If you are attacked and go to war over it, travel costs are nullified for one battle.</li>
+      </ul>
 
-        <div class="note">Example: A1 → A2 → A3 → B3 costs 12,000 coins.</div>
-      </div>
+      <h3>War Travel</h3>
+      <ul>
+        <li>Land movement costs 3000 coins per tile.</li>
+        <li>You may only march through your own tiles or allied tiles.</li>
+        <li>Seafaring costs the same as land movement.</li>
+        <li>Seas cannot be blockaded.</li>
+        <li>If forces clash on the same sea path, a naval battle occurs. The winner keeps the route.</li>
+      </ul>
 
-      <div class="rule-panel">
-        <h3>AI & Inactive Tile Conquering</h3>
-        <ul>
-          <li>A diplomacy post is required and travel costs still apply.</li>
-          <li>You must border the tile being conquered.</li>
-          <li>Staff will organize the mock siege.</li>
-        </ul>
-      </div>
+      <div class="note">Example: A1 → A2 → A3 → B3 costs 12,000 coins.</div>
 
-      <div class="rule-panel">
-        <h3>Unit Rules</h3>
-        <ul>
-          <li>Players may have a maximum of 8 units outside of wars.</li>
-          <li>Faction leaders may design custom troop trees for their faction.</li>
-          <li>During wars, factions have a faction-wide limit of 250 troops.</li>
-          <li>Faction leaders may decide how troops are allocated between players.</li>
-        </ul>
-      </div>
-
-      <div class="rule-panel">
-        <h3>Relics</h3>
-        <ul>
-          <li>Relics include holy books and event artifacts.</li>
-          <li>Relics must always be assigned to a town.</li>
-          <li>Relics cannot be transferred during wartime.</li>
-          <li>No town may hold more than 3 relics.</li>
-          <li>If a tile is conquered, attackers gain the relics assigned to that town.</li>
-          <li>After 30 days of inactivity, relics may reset or be hidden by staff.</li>
-        </ul>
-      </div>
+      <h3>AI & Inactive Tile Conquering</h3>
+      <ul>
+        <li>A diplomacy post is required and travel costs still apply.</li>
+        <li>You must border the tile being conquered.</li>
+        <li>Staff will organize the mock siege.</li>
+      </ul>
     </section>
 
-    <section class="content-section" id="banned-items">
-      <div class="section-heading">
-        <p class="eyebrow">Restricted Content</p>
-        <h2>Banned Items</h2>
-      </div>
+    <section class="card" id="relics">
+      <h2>Relics & Units</h2>
 
-      <div class="banned-grid">
+      <h3>Unit Rules</h3>
+      <ul>
+        <li>Players may have a maximum of 8 units outside of wars.</li>
+        <li>Faction leaders may design custom troop trees for their faction.</li>
+        <li>During wars, factions have a faction-wide limit of 250 troops.</li>
+        <li>Faction leaders may decide how troops are allocated between players.</li>
+      </ul>
+
+      <h3>Relics</h3>
+      <ul>
+        <li>Relics include holy books and event artifacts.</li>
+        <li>Relics must always be assigned to a town.</li>
+        <li>Relics cannot be transferred during wartime.</li>
+        <li>No town may hold more than 3 relics.</li>
+        <li>If a tile is conquered, attackers gain the relics assigned to that town.</li>
+        <li>After 30 days of inactivity, relics may reset or be hidden by staff.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="banned">
+      <h2>Banned Items</h2>
+      <div class="banned">
         <span>Chorus Wine</span>
         <span>Villagers Fright Wine</span>
         <span>Netherite Weapons/Armor</span>
@@ -352,31 +284,19 @@
       </div>
     </section>
 
-    <section class="content-section" id="enforcement">
-      <div class="section-heading">
-        <p class="eyebrow">Staff Action</p>
-        <h2>Enforcement</h2>
-      </div>
-
-      <div class="rule-panel">
-        <ul>
-          <li>Reports require evidence.</li>
-          <li>Exploit reporting may be rewarded.</li>
-          <li>False reports are punishable.</li>
-          <li>Players may not interfere with staff events, investigations, or administrative actions.</li>
-          <li>Staff decisions may be appealed to senior staff or administrators.</li>
-          <li>Final administrative decisions are binding.</li>
-          <li>Dynmap Hide is allowed.</li>
-        </ul>
-      </div>
+    <section class="card" id="enforcement">
+      <h2>Enforcement</h2>
+      <ul>
+        <li>Reports require evidence.</li>
+        <li>Exploit reporting may be rewarded.</li>
+        <li>False reports are punishable.</li>
+        <li>Players may not interfere with staff events, investigations, or administrative actions.</li>
+        <li>Staff decisions may be appealed to senior staff or administrators.</li>
+        <li>Final administrative decisions are binding.</li>
+        <li>Dynmap Hide is allowed.</li>
+      </ul>
     </section>
 
   </main>
-
-  <footer class="site-footer">
-    <img src="logo.png" alt="ROTO Rome Logo">
-    <p>ROTO - Rome</p>
-    <span>Rules, nation systems, and warfare guide.</span>
-  </footer>
 </body>
 </html>
