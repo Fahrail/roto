@@ -44,11 +44,22 @@ body {
   overflow-y: auto;
 }
 
+.logo-link {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .side-logo {
   width: 92px;
   display: block;
   margin: 0 auto 14px;
   filter: drop-shadow(0 10px 18px rgba(0,0,0,.45));
+  transition: transform .2s ease;
+}
+
+.logo-link:hover .side-logo {
+  transform: scale(1.04);
 }
 
 .sidebar h2 {
@@ -81,6 +92,36 @@ body {
 .sidebar a:hover {
   background: rgba(228,189,103,.16);
   color: #fff2c7;
+}
+
+.nav-group {
+  display: grid;
+  gap: 6px;
+  padding-top: 8px;
+}
+
+.nav-group span {
+  color: var(--gold2);
+  font-size: .72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  padding: 4px 4px 0;
+}
+
+.nav-group a {
+  padding: 9px 13px 9px 22px;
+  font-size: .92rem;
+}
+
+.discord-button {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--gold2), var(--gold)) !important;
+  color: #2b1408 !important;
+  border-color: rgba(255,255,255,.18) !important;
 }
 
 .page {
@@ -269,7 +310,46 @@ li {
 }
 
 #enforcement.card {
-  margin-bottom: 50px;
+  margin-bottom: 28px;
+}
+
+.footer {
+  text-align: center;
+  color: #d7b86a;
+  padding: 34px 20px 54px;
+}
+
+.footer img {
+  width: 70px;
+  display: block;
+  margin: 0 auto 10px;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.45));
+}
+
+.footer p {
+  margin: 0;
+  color: var(--gold2);
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.footer span {
+  display: block;
+  margin-top: 6px;
+  color: #d7b86a;
+}
+
+.footer a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2b1408;
+  background: linear-gradient(135deg, var(--gold2), var(--gold));
+  text-decoration: none;
+  font-weight: 900;
+  padding: 12px 18px;
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.28);
 }
 
 @media (max-width: 900px) {
@@ -282,6 +362,14 @@ li {
 
   .sidebar nav {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .nav-group {
+    padding-top: 0;
+  }
+
+  .nav-group span {
+    grid-column: 1 / -1;
   }
 
   .page {
