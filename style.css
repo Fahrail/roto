@@ -44,22 +44,11 @@ body {
   overflow-y: auto;
 }
 
-.logo-link {
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-}
-
 .side-logo {
   width: 92px;
   display: block;
   margin: 0 auto 14px;
   filter: drop-shadow(0 10px 18px rgba(0,0,0,.45));
-  transition: transform .2s ease;
-}
-
-.logo-link:hover .side-logo {
-  transform: scale(1.04);
 }
 
 .sidebar h2 {
@@ -92,26 +81,6 @@ body {
 .sidebar a:hover {
   background: rgba(228,189,103,.16);
   color: #fff2c7;
-}
-
-.nav-group {
-  display: grid;
-  gap: 6px;
-  padding-top: 8px;
-}
-
-.nav-group span {
-  color: var(--gold2);
-  font-size: .72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .14em;
-  padding: 4px 4px 0;
-}
-
-.nav-group a {
-  padding: 9px 13px 9px 22px;
-  font-size: .92rem;
 }
 
 .discord-button {
@@ -362,14 +331,6 @@ li {
 
   .sidebar nav {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
-
-  .nav-group {
-    padding-top: 0;
-  }
-
-  .nav-group span {
-    grid-column: 1 / -1;
   }
 
   .page {
